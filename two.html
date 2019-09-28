@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 2. 求取某个日期是星期几(例如：2017/9/25)。
+        function show(){
+            var a = prompt('请输入今天的日期：(例如：2017/9/25)');
+        var b = new Date(a);
+        var c = b.getDay();
+        var week;
+        switch (c) {
+            case 0:
+            week='星期日'
+            break;
+            case 1:
+            week='星期一'
+            break;
+            case 2:
+            week='星期二'
+            break;
+            case 3:
+            week='星期三'
+            break;
+            case 4:
+            week='星期四'
+            break;
+            case 5:
+            week='星期五'
+            break;
+            case 6:
+            week='星期六'
+            break;
+            default:'星期一'
+        }
+        document.write('今天是' + week);
+        }
+        show();
+
+
+        // var arr = new Date(prompt('请输入今天的日期：(例如：2017/9/25)'));
+        // var a = arr.getDay();
+        // document.write('今天是周' + a);
+
+    </script>
+</body>
+
+</html>

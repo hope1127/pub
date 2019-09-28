@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // 1.用代码实现输出日期，日期格式为：yyy-MM-dd （5分）
+        function gettime() {
+            var time = new Date();
+            var year = time.getFullYear();
+            var month = time.getMonth() + 1;
+            var da = time.getDate();
+            if (month < 10) {
+                month = '0' + month;
+            }
+            if (da < 10) {
+                da = '0' + da;
+            }
+            console.log(year + '-' + month + '-' + da);
+        }
+        gettime();
+    </script>
+
+</body>
+
+</html>
